@@ -54,7 +54,7 @@
          ];
     }
     else {
-        //we aren't in range of the phone, they didn't bring it on their run
+        //phone not in range
     }
 }
 - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath

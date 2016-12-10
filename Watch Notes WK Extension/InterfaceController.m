@@ -24,26 +24,6 @@
         [watchSession activateSession];
     }
     notes=[[NSArray alloc]init];
-    /*
-    if ([[WCSession defaultSession] isReachable]) {
-        NSArray *objects = [[NSArray alloc] initWithObjects:@"sendNotes", nil];
-        NSArray *keys = [[NSArray alloc] initWithObjects:@"sendData", nil];
-        NSDictionary *applicationData = [[NSDictionary alloc] initWithObjects:objects forKeys:keys];
-        [[WCSession defaultSession] sendMessage:applicationData
-                                   replyHandler:^(NSDictionary *reply) {
-                                       notes = [reply objectForKey:@"actionPerformed"];
-                                       [self updateTable];
-                                   }
-                                   errorHandler:^(NSError *error) {
-                                       //catch any errors here
-                                   }
-         ];
-    }
-    else {
-        //phone not in range
-    }
-     */
-    // Configure interface objects here.
 }
 
 - (void)willActivate {

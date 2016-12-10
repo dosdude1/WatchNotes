@@ -22,7 +22,7 @@
                                    style:UIBarButtonItemStyleBordered
                                    target:self
                                    action:@selector(dismissKeyboard)];
-    // Do any additional setup after loading the view.
+    
 }
 - (void)viewWillAppear:(BOOL)animated
 {
@@ -66,7 +66,6 @@
     noteTextView.scrollIndicatorInsets = contentInsets;
     
     // If active text field is hidden by keyboard, scroll it so it's visible
-    // Your application might not need or want this behavior.
     CGRect aRect = self.view.frame;
     aRect.size.height -= kbSize.height;
     if (!CGRectContainsPoint(aRect, noteTextView.frame.origin) ) {

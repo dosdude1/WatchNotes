@@ -17,7 +17,6 @@
 - (void)awakeWithContext:(id)context {
     [super awakeWithContext:context];
     [self.noteLabel setText:context];
-    // Configure interface objects here.
 }
 
 - (void)willActivate {
